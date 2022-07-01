@@ -75,6 +75,28 @@ function RelatedMaps(props) {
           geología
         </p>
       </div>
+      <div className={classNames(PanelStyles.section, Styles.section)}>
+        <a target="_blank" href="http://172.16.60.46:3002/#celec_geo">
+          <img
+            className={Styles.image}
+            src={require("../../wwwroot/images/g2_hidro.png")}
+            alt="Hidrometeorología"
+          />
+        </a>
+
+        <a
+          target="_blank"
+          className={Styles.link}
+          href="http://172.16.60.46:3002/#celec_hidrometeorologia"
+        >
+          Geología
+        </a>
+
+        <p>
+          Visor de las variables hidrometeorologicas a escala mensual en las
+          torres de hidrometeorología
+        </p>
+      </div>
     </MenuPanel>
   );
 }
