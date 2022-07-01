@@ -76,7 +76,10 @@ function RelatedMaps(props) {
         </p>
       </div>
       <div className={classNames(PanelStyles.section, Styles.section)}>
-        <a target="_blank" href="http://172.16.60.46:3002/#celec_geo">
+        <a
+          target="_blank"
+          href="http://172.16.60.46:3002/#celec_hidrometeorologia"
+        >
           <img
             className={Styles.image}
             src={require("../../wwwroot/images/g2_hidro.png")}
@@ -89,7 +92,7 @@ function RelatedMaps(props) {
           className={Styles.link}
           href="http://172.16.60.46:3002/#celec_hidrometeorologia"
         >
-          Geología
+          Hidrometeorología
         </a>
 
         <p>
