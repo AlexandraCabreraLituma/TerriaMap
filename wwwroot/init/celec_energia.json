@@ -122,7 +122,7 @@
                   "name": "Atlas Solar",
                   "members": [
                     {
-                      "name": "Mapa Irradiacion Global Inclinacion Optima",
+                      "name": "Mapa Irradiación Global Inclinación Optima",
                       "url": "http://172.16.60.46:8600/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                       "layers": "g4_energias_renovables:Mapa-Irradiacion-Global-Inclinacion-Optima-Ecuador",
                       "type": "wms",
@@ -134,7 +134,7 @@
                       ]
                     },
                     {
-                      "name": "Mapa Irradiacion Horizontal Difusa",
+                      "name": "Mapa Irradiación Horizontal Difusa",
                       "url": "http://172.16.60.46:8600/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                       "layers": "g4_energias_renovables:Mapa-Irradiacion-horizontal-Difusa-Ecuador",
                       "type": "wms",
@@ -146,7 +146,7 @@
                       ]
                     },
                     {
-                      "name": "Mapa Irradiacion Horizontal Global",
+                      "name": "Mapa Irradiación Horizontal Global",
                       "url": "http://172.16.60.46:8600/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                       "layers": "g4_energias_renovables:Mapa-Irradiacion-Horizontal-Global-Ecuador",
                       "type": "wms",
@@ -158,7 +158,7 @@
                       ]
                     },
                     {
-                      "name": "Mapa Irradiacion Normal Directa",
+                      "name": "Mapa Irradiación Normal Directa",
                       "url": "http://172.16.60.46:8600/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                       "layers": "g4_energias_renovables:Mapa-Irradiacion-Normal-Directa-Ecuador",
                       "type": "wms",
@@ -344,7 +344,7 @@
                   "name": "Atlas Viento",
                   "members": [
                     {
-                      "name": "Mapa Veolocidad Viento 100m",
+                      "name": "Mapa Velocidad Viento 100m",
                       "url": "http://172.16.60.46:8600/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
                       "layers": "g4_energias_renovables:Mapa-Velocidad-Viento-100m",
                       "type": "wms",
