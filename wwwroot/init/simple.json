@@ -1,6 +1,6 @@
 {
   "homeCamera": {
-    "north":-2.04,
+    "north": -2.04,
     "east": -77.63,
     "south": -3.85,
     "west": -80.47
@@ -9,7 +9,30 @@
     {
       "type": "group",
       "name": "CELEC-EP",
+      "sortMembersBy": "name",
+      "isOpen": false,
       "members": [
+        {
+          "path": ["g1"],
+          "type": "terria-reference",
+          "isGroup": true,
+          "url": "$TERRIA_URL/init/celec_hidrometeorologia.json",
+          "name": "G1 Hidrometeorología"
+        },
+        {
+          "path": ["g2"],
+          "type": "terria-reference",
+          "isGroup": true,
+          "url": "$TERRIA_URL/init/celec_geo.json",
+          "name": "G2 Geología"
+        },
+        {
+          "path": ["g4"],
+          "type": "terria-reference",
+          "isGroup": true,
+          "url": "$TERRIA_URL/init/celec_energia.json",
+          "name": "G4 Energías Renovables"
+        },
         {
           "type": "group",
           "name": "G6 Infraestructura",
@@ -199,9 +222,7 @@
             }
           ],
           "isOpen": true,
-          "shareKeys": [
-            "Root Group/WMS"
-          ]
+          "shareKeys": ["Root Group/WMS"]
         },
         {
           "type": "group",
@@ -242,9 +263,7 @@
             }
           ],
           "isOpen": true,
-          "shareKeys": [
-            "Root Group/WMS"
-          ]
+          "shareKeys": ["Root Group/WMS"]
         }
       ]
     },
@@ -276,9 +295,7 @@
             }
           ],
           "isOpen": true,
-          "shareKeys": [
-            "Root Group/WMS"
-          ]
+          "shareKeys": ["Root Group/WMS"]
         },
         {
           "name": "Energy Data",

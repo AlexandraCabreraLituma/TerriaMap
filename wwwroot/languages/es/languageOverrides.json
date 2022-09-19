@@ -218,7 +218,8 @@
     "convertNotificationFeedback": "Si tiene preguntas o comentarios, haga clic aquí.",
     "convertNotificationWarningsTitle": "Detalles técnicos",
     "convertErrorTitle": "No se pudo actualizar el enlace para compartir a V8",
-    "convertErrorMessage": "Este enlace para compartir se basa en una versión anterior de TerriaJS, el software que impulsa este mapa web. Se ha producido un error al intentar actualizar los datos compartidos."
+    "convertErrorMessage": "Este enlace para compartir se basa en una versión anterior de TerriaJS, el software que impulsa este mapa web. Se ha producido un error al intentar actualizar los datos compartidos.",
+    "downloadMap": "Descargar mapa"
   },
   "countDatasets": {
     "loadError": "No se pudo cargar.",
