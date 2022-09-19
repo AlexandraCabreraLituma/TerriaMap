@@ -1,131 +1,59 @@
 {
-  "homeCamera": {
-    "north":-2.04,
-    "east": -77.63,
-    "south": -3.85,
-    "west": -80.47
-  },
   "catalog": [
     {
+      "id": "g2",
       "type": "group",
-      "name": "CELEC-EP",
+      "name": "G2 Geología",
+      "isOpen": true,
       "members": [
         {
+          "name": "db110_fallas_cardenillo_200k",
+          "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "layers": "g2_geologia:g2_geologia:db110_fallas_cardenillo_200k",
+          "type": "wms",
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "eb000_geologia",
+          "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "layers": "g2_geologia:g2_geologia.eb000_geologia",
+          "type": "wms",
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "eb000_geologia_cardenillo_200k",
+          "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "layers": "g2_geologia:eb000_geologia_cardenillo_200k",
+          "type": "wms",
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "eb000_geologia_cardenillo_250k",
+          "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "layers": "g2_geologia:eb000_geologia_cardenillo_250k",
+          "type": "wms",
+          "isOpenInWorkbench": false
+        },
+        {
+          "name": "puntos_monitoreo",
+          "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "layers": "g2_geologia:g2_geologia_puntos_monitoreo",
+          "type": "wms",
+          "isOpenInWorkbench": false
+        },
+        {
           "type": "group",
-          "name": "G2 Geología",
+          "name": "Control de desplazamiento",
           "members": [
             {
-              "name": "db110_fallas_cardenillo_200k",
-              "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
-              "layers": "g2_geologia:g2_geologia:db110_fallas_cardenillo_200k",
-              "type": "wms",
-              "isOpenInWorkbench": false
-            },
-            {
-              "name": "eb000_geologia",
-              "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
-              "layers": "g2_geologia:g2_geologia.eb000_geologia",
-              "type": "wms",
-              "isOpenInWorkbench": false
-            },
-            {
-              "name": "eb000_geologia_cardenillo_200k",
-              "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
-              "layers": "g2_geologia:eb000_geologia_cardenillo_200k",
-              "type": "wms",
-              "isOpenInWorkbench": false
-            },
-            {
-              "name": "eb000_geologia_cardenillo_250k",
-              "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
-              "layers": "g2_geologia:eb000_geologia_cardenillo_250k",
-              "type": "wms",
-              "isOpenInWorkbench": false
-            },
-            {
-              "name": "puntos_monitoreo",
-              "url": "$GEOSERVER_URL/ows?service=wms&version=1.3.0&request=GetCapabilities",
-              "layers": "g2_geologia:g2_geologia_puntos_monitoreo",
-              "type": "wms",
-              "isOpenInWorkbench": false
-            },
-            {
-              "type": "group",
-              "name": "Control de desplazamiento",
-              "members": [
-                {
-                  "name": "Desplazamiento (mm)",
-                  "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/nkIf-8Q7z/g2_control_desplazamiento?orgId=1",
-                  "type": "csv",
-                  "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_control_desplazamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
-                  "defaultStyle": {
-                    "time": {
-                      "timeColumn": "timestamp_mes",
-                      "idColumns": [
-                        "est_id"
-                      ]
-                    }
-                  },
-                  "info": [
-                    {
-                      "name": "Fuente de datos",
-                      "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
-                    }
-                  ],
-                  "columns":[
-                    {
-                      "name": "geom_32717",
-                      "type": "hidden"
-                    },
-                    {
-                      "name": "dashboard",
-                      "type": "hidden"
-                    }
-                  ]
-                },
-                {
-                  "name": "Asentamiento (mm)",
-                  "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/BDiyQlQnz/g2_control_desplazamiento_asentamiento?orgId=1",
-                  "type": "csv",
-                  "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_control_desplazamiento_asentamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
-                  "defaultStyle": {
-                    "time": {
-                      "timeColumn": "timestamp_mes",
-                      "idColumns": [
-                        "est_id"
-                      ]
-                    }
-                  },
-                  "info": [
-                    {
-                      "name": "Fuente de datos",
-                      "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
-                    }
-                  ],
-                  "columns":[
-                    {
-                      "name": "geom_32717",
-                      "type": "hidden"
-                    },
-                    {
-                      "name": "dashboard",
-                      "type": "hidden"
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "name": "Extensómetro Desplazamiento (mm)",
-              "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/vR387Du7k/g2_extensometro?orgId=1",
+              "name": "Desplazamiento (mm)",
+              "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/nkIf-8Q7z/g2_control_desplazamiento?orgId=1",
               "type": "csv",
-              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_extensometro&maxFeatures=5000000&outputFormat=text%2Fcsv",
+              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_control_desplazamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
               "defaultStyle": {
                 "time": {
                   "timeColumn": "timestamp_mes",
-                  "idColumns": [
-                    "est_id"
-                  ]
+                  "idColumns": ["est_id"]
                 }
               },
               "info": [
@@ -134,7 +62,7 @@
                   "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
                 }
               ],
-              "columns":[
+              "columns": [
                 {
                   "name": "geom_32717",
                   "type": "hidden"
@@ -146,16 +74,14 @@
               ]
             },
             {
-              "name": "Inclinómetro Desplazamiento (mm)",
-              "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/z7eE8v_7z/g2_inclinometro?orgId=1",
+              "name": "Asentamiento (mm)",
+              "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/BDiyQlQnz/g2_control_desplazamiento_asentamiento?orgId=1",
               "type": "csv",
-              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia.inclinometro&maxFeatures=5000000&outputFormat=text%2Fcsv",
+              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_control_desplazamiento_asentamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
               "defaultStyle": {
                 "time": {
                   "timeColumn": "timestamp_mes",
-                  "idColumns": [
-                    "est_id"
-                  ]
+                  "idColumns": ["est_id"]
                 }
               },
               "info": [
@@ -164,97 +90,7 @@
                   "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
                 }
               ],
-              "columns":[
-                {
-                  "name": "geom_32717",
-                  "type": "hidden"
-                },
-                {
-                  "name": "dashboard",
-                  "type": "hidden"
-                }
-              ]
-            },
-            {
-              "name": "Piezómetro  Casa Grande (mm)",
-              "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/Al7RzLr7k/g2_piezometro_casa_grande?orgId=1",
-              "type": "csv",
-              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_casa_grande&maxFeatures=5000000&outputFormat=text%2Fcsv",
-              "defaultStyle": {
-                "time": {
-                  "timeColumn": "timestamp_mes",
-                  "idColumns": [
-                    "est_id"
-                  ]
-                }
-              },
-              "info": [
-                {
-                  "name": "Fuente de datos",
-                  "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
-                }
-              ],
-              "columns":[
-                {
-                  "name": "geom_32717",
-                  "type": "hidden"
-                },
-                {
-                  "name": "dashboard",
-                  "type": "hidden"
-                }
-              ]
-            },
-            {
-              "name": "Piezómetro  Cuerda vibrante (mm)",
-              "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/qvjjZsr7k/g2_piezometro_cuerda_vibrante?orgId=1",
-              "type": "csv",
-              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_cuerda_vibrante&maxFeatures=5000000&outputFormat=text%2Fcsv",
-              "defaultStyle": {
-                "time": {
-                  "timeColumn": "timestamp_mes",
-                  "idColumns": [
-                    "est_id"
-                  ]
-                }
-              },
-              "info": [
-                {
-                  "name": "Fuente de datos",
-                  "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
-                }
-              ],
-              "columns":[
-                {
-                  "name": "geom_32717",
-                  "type": "hidden"
-                },
-                {
-                  "name": "dashboard",
-                  "type": "hidden"
-                }
-              ]
-            },
-            {
-              "name": "Referencias fijas Desplazamiento (mm)",
-              "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/QdiQaawnk/g2_refencias_fijas_desplazamiento?orgId=1",
-              "type": "csv",
-              "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_referencias_fijas_desplzamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
-              "defaultStyle": {
-                "time": {
-                  "timeColumn": "timestamp_mes",
-                  "idColumns": [
-                    "est_id"
-                  ]
-                }
-              },
-              "info": [
-                {
-                  "name": "Fuente de datos",
-                  "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
-                }
-              ],
-              "columns":[
+              "columns": [
                 {
                   "name": "geom_32717",
                   "type": "hidden"
@@ -266,63 +102,148 @@
               ]
             }
           ]
+        },
+        {
+          "name": "Extensómetro Desplazamiento (mm)",
+          "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/vR387Du7k/g2_extensometro?orgId=1",
+          "type": "csv",
+          "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_extensometro&maxFeatures=5000000&outputFormat=text%2Fcsv",
+          "defaultStyle": {
+            "time": {
+              "timeColumn": "timestamp_mes",
+              "idColumns": ["est_id"]
+            }
+          },
+          "info": [
+            {
+              "name": "Fuente de datos",
+              "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
+            }
+          ],
+          "columns": [
+            {
+              "name": "geom_32717",
+              "type": "hidden"
+            },
+            {
+              "name": "dashboard",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "name": "Inclinómetro Desplazamiento (mm)",
+          "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/z7eE8v_7z/g2_inclinometro?orgId=1",
+          "type": "csv",
+          "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia.inclinometro&maxFeatures=5000000&outputFormat=text%2Fcsv",
+          "defaultStyle": {
+            "time": {
+              "timeColumn": "timestamp_mes",
+              "idColumns": ["est_id"]
+            }
+          },
+          "info": [
+            {
+              "name": "Fuente de datos",
+              "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
+            }
+          ],
+          "columns": [
+            {
+              "name": "geom_32717",
+              "type": "hidden"
+            },
+            {
+              "name": "dashboard",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "name": "Piezómetro  Casa Grande (mm)",
+          "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/Al7RzLr7k/g2_piezometro_casa_grande?orgId=1",
+          "type": "csv",
+          "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_casa_grande&maxFeatures=5000000&outputFormat=text%2Fcsv",
+          "defaultStyle": {
+            "time": {
+              "timeColumn": "timestamp_mes",
+              "idColumns": ["est_id"]
+            }
+          },
+          "info": [
+            {
+              "name": "Fuente de datos",
+              "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
+            }
+          ],
+          "columns": [
+            {
+              "name": "geom_32717",
+              "type": "hidden"
+            },
+            {
+              "name": "dashboard",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "name": "Piezómetro  Cuerda vibrante (mm)",
+          "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/qvjjZsr7k/g2_piezometro_cuerda_vibrante?orgId=1",
+          "type": "csv",
+          "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_cuerda_vibrante&maxFeatures=5000000&outputFormat=text%2Fcsv",
+          "defaultStyle": {
+            "time": {
+              "timeColumn": "timestamp_mes",
+              "idColumns": ["est_id"]
+            }
+          },
+          "info": [
+            {
+              "name": "Fuente de datos",
+              "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
+            }
+          ],
+          "columns": [
+            {
+              "name": "geom_32717",
+              "type": "hidden"
+            },
+            {
+              "name": "dashboard",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "name": "Referencias fijas Desplazamiento (mm)",
+          "description": "Resumen de los valores de a escala anual y mensual en las estaciones .\n\n Enlace  $GRAFANA_URL/d/QdiQaawnk/g2_refencias_fijas_desplazamiento?orgId=1",
+          "type": "csv",
+          "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_referencias_fijas_desplzamiento&maxFeatures=5000000&outputFormat=text%2Fcsv",
+          "defaultStyle": {
+            "time": {
+              "timeColumn": "timestamp_mes",
+              "idColumns": ["est_id"]
+            }
+          },
+          "info": [
+            {
+              "name": "Fuente de datos",
+              "content": "La Corporación Eléctrica del Ecuador (CELEC SUR  )  [https://www.celec.gob.ec/celecsur/](https://www.celec.gob.ec/celecsur/)"
+            }
+          ],
+          "columns": [
+            {
+              "name": "geom_32717",
+              "type": "hidden"
+            },
+            {
+              "name": "dashboard",
+              "type": "hidden"
+            }
+          ]
         }
       ]
     }
-  ],
-  "baseMaps": {
-    "items": [
-      {
-        "item": {
-          "id": "basemap-bing-aerial",
-          "name": "Bing Maps Aerial"
-        },
-        "image": "images/basemaps/ecuador-aerial.png"
-      },
-      {
-        "item": {
-          "id": "basemap-bing-aerial-with-labels",
-          "name": "Bing Maps Aerial with Labels"
-        },
-        "image": "images/basemaps/ecuador-aerial-labels.png"
-      },
-      {
-        "item": {
-          "id": "basemap-bing-roads",
-          "name": "Bing Maps Roads"
-        },
-        "image": "images/basemaps/ecuador-maps-roads.png"
-      },
-      {
-        "item": {
-          "id": "basemap-natural-earth-II",
-          "name": "Natural Earth II"
-        },
-        "image": "images/basemaps/ecuador-natural-earth.png"
-      },
-      {
-        "item": {
-          "id": "basemap-black-marble",
-          "name": "NASA Black Marble"
-        },
-        "image": "images/basemaps/ecuador-black-marble.png"
-      },
-      {
-        "item": {
-          "id": "basemap-positron",
-          "name": "Positron (Light)"
-        },
-        "image": "images/basemaps/ecuador-positron.png"
-      },
-      {
-        "item": {
-          "id": "basemap-darkmatter",
-          "name": "Dark Matter"
-        },
-        "image": "images/basemaps/ecuador-dark-matter.png"
-      }
-    ]
-  },
-  "baseMapId": "basemap-bing-aerial-with-labels",
-  "previewBaseMapId": "basemap-positron"
+  ]
 }
