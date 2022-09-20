@@ -144,86 +144,9 @@
     },
     {
       "type": "group",
-      "name": "Instituciones externas",
+      "name": "Instituciones Ecuador",
+      "sortMembersBy": "name",
       "members": [
-        {
-          "type": "group",
-          "name": "Centro Sur",
-          "members": [
-            {
-              "name": "Área de Concesión",
-              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Cartografia/AreaConcesion/MapServer",
-              "type": "esri-mapServer",
-              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
-            },
-            {
-              "name": "Consignaciones",
-              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Geoportal_Comercial/ConsigAreas_hoy_manana/MapServer",
-              "type": "esri-mapServer",
-              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
-            },
-            {
-              "name": "Red público",
-              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Geoportal_Publico/GeopPublic_RedesDist_rsgis1/MapServer",
-              "type": "esri-mapServer",
-              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "name": "Instituaciones Gubernamentales ",
-          "members": [
-            {
-              "type": "group",
-              "name": "Instituto Geográfico Militar ",
-              "members": [
-                {
-                  "type": "wfs",
-                  "name": "Vías",
-                  "url": "http://www.geoportaligm.gob.ec/regional/wfs?&request=GetFeature&service=WFS&typename=igm:via_l&outputFormat=text/xml;%20subtype=gml/3.1.1&version=1.1.0"
-                },
-                {
-                  "name": "Información Nacional",
-                  "url": "http://www.geoportaligm.gob.ec/nacional/wms",
-                  "type": "wms-group"
-                },
-                {
-                  "name": "Información Regional",
-                  "url": "http://www.geoportaligm.gob.ec/regional/wms",
-                  "type": "wms-group"
-                },
-                {
-                  "name": "Modelo Digital de Terreno",
-                  "url": "http://www.geoportaligm.gob.ec/dtm/wms?service=WMS&version=1.3.0&request=GetCapabilities",
-                  "type": "wms"
-                },
-                {
-                  "name": "Ortofotos",
-                  "url": "http://www.geoportaligm.gob.ec/orto/wms",
-                  "type": "wms-group"
-                }
-              ]
-            },
-            {
-              "type": "wfs-group",
-              "name": "Instituto Nacional de Estadísticas y Censos",
-              "url": "https://geoinec.inec.gob.ec/geoinec/ows"
-            },
-            //{
-            //  "type": "wms-group",
-            //  "name": "Ministerio del Ambiente",
-            //  "url": "http://mapainteractivo.ambiente.gob.ec/geoserver/wms"
-            //},
-            {
-              "type": "wms-group",
-              "name": "SIGTIERRAS",
-              "url": "http://geoportal.sigtierras.gob.ec:8080/geoserver/sigtierras/wms"
-            }
-          ],
-          "isOpen": true,
-          "shareKeys": ["Root Group/WMS"]
-        },
         {
           "type": "group",
           "name": "Universidad del Azuay",
@@ -262,14 +185,173 @@
               "dataCustodian": "[IERSE](http://ierse.uazuay.edu.ec/)"
             }
           ],
-          "isOpen": true,
           "shareKeys": ["Root Group/WMS"]
+        },
+        {
+          "type": "group",
+          "name": "Empresa Eléctrica Regional Centro Sur",
+          "members": [
+            {
+              "name": "Área de Concesión",
+              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Cartografia/AreaConcesion/MapServer",
+              "type": "esri-mapServer",
+              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
+            },
+            {
+              "name": "Consignaciones",
+              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Geoportal_Comercial/ConsigAreas_hoy_manana/MapServer",
+              "type": "esri-mapServer",
+              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
+            },
+            {
+              "name": "Red público",
+              "url": "https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/Geoportal_Publico/GeopPublic_RedesDist_rsgis1/MapServer",
+              "type": "esri-mapServer",
+              "dataCustodian": "[Centro Sur Servicios](https://geoservicios2.centrosur.gob.ec/geoservicios/rest/services/)"
+            }
+          ]
+        },
+        {
+          "url": "https://geovisore.controlrecursosyenergia.gob.ec/arcgis/rest/services",
+          "type": "esri-group",
+          "dataCustodian": "[Agencia de Regulación y Control de Energía y Recursos Naturales no Renovables – ARCERNNR.](https://www.controlrecursosyenergia.gob.ec/)",
+          "name": "Agencia de Regulación y Control de Energía y Recursos Naturales no Renovables – ARCERNNR."
+        },
+        {
+          "type": "group",
+          "name": "Instituto Geográfico Militar ",
+          "members": [
+            {
+              "type": "wfs",
+              "name": "Vías",
+              "url": "http://www.geoportaligm.gob.ec/regional/wfs?&request=GetFeature&service=WFS&typename=igm:via_l&outputFormat=text/xml;%20subtype=gml/3.1.1&version=1.1.0"
+            },
+            {
+              "name": "Información Nacional",
+              "url": "http://www.geoportaligm.gob.ec/nacional/wms",
+              "type": "wms-group"
+            },
+            {
+              "name": "Información Regional",
+              "url": "http://www.geoportaligm.gob.ec/regional/wms",
+              "type": "wms-group"
+            },
+            {
+              "name": "Modelo Digital de Terreno",
+              "url": "http://www.geoportaligm.gob.ec/dtm/wms?service=WMS&version=1.3.0&request=GetCapabilities",
+              "type": "wms"
+            },
+            {
+              "name": "Ortofotos",
+              "url": "http://www.geoportaligm.gob.ec/orto/wms",
+              "type": "wms-group"
+            }
+          ]
+        },
+        {
+          "type": "wfs-group",
+          "name": "Instituto Nacional de Estadísticas y Censos",
+          "url": "https://geoinec.inec.gob.ec/geoinec/ows"
+        },
+        //{
+        //  "type": "wms-group",
+        //  "name": "Ministerio del Ambiente",
+        //  "url": "http://mapainteractivo.ambiente.gob.ec/geoserver/wms"
+        //},
+        {
+          "type": "wms-group",
+          "name": "SIGTIERRAS",
+          "url": "http://geoportal.sigtierras.gob.ec:8080/geoserver/sigtierras/wms"
+        },
+        {
+          "name": "Catálogo INAMHI",
+          "description": "[Licence](http://www.serviciometeorologico.gob.ec/)",
+          "dataCustodian": "[INAMHI](http://www.serviciometeorologico.gob.ec//)",
+          "url": "http://186.42.174.236:8080/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "type": "wms-group"
+        },
+        {
+          "type": "group",
+          "name": "Ministerio de Agricultura",
+          "members": [
+            {
+              "name": "Cobertura y uso de la tierra",
+              "description": "[Licence](http://geoportal.agricultura.gob.ec)",
+              "dataCustodian": "[MAG](http://geoportal.agricultura.gob.ec)",
+              "url": "http://geoportal.agricultura.gob.ec/cobertura/E100k/wms",
+              "type": "wms-group"
+            },
+            {
+              "name": "Estimaciones de cultivos anuales",
+              "description": "[Licence](http://geoportal.agricultura.gob.ec)",
+              "dataCustodian": "[MAG](http://geoportal.agricultura.gob.ec)",
+              "url": "http://geoportal.agricultura.gob.ec/cobertura/E25k/wms",
+              "type": "wms-group"
+            },
+            {
+              "name": "Suelos",
+              "description": "[Licence](http://geoportal.agricultura.gob.ec)",
+              "dataCustodian": "[MAG](http://geoportal.agricultura.gob.ec)",
+              "url": "http://geoportal.agricultura.gob.ec/sigtierras/geopedologia/wms",
+              "type": "wms-group"
+            }
+          ]
+        },
+        {
+          "name": "Ministerio del ambiente",
+          "description": "[Licence](http://ide.ambiente.gob.ec)",
+          "dataCustodian": "[MAE](http://ide.ambiente.gob.ec)",
+          "url": "http://ide.ambiente.gob.ec/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "type": "wms-group"
+        },
+        {
+          "name": "Ministerio de Inclusión Económica y Social",
+          "description": "[Licence](http://inclusion.gob.ec)",
+          "dataCustodian": "[MAE](http://inclusion.gob.ec)",
+          "url": "https://geoportal.inclusion.gob.ec/geoserver/ows?service=wms&version=1.3.0&request=GetCapabilities",
+          "type": "wms-group"
+        },
+        {
+          "name": "Ministerio de Minería - ARCOM",
+          "type": "group",
+          "isOpen": false,
+          "members": [
+            {
+              "name": "Catastro Minero",
+              "description": "[Licence](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "dataCustodian": "[Agencia de Regulación y Control Minero](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "url": "http://181.211.37.231:1028/arcgis/rest/services/Concesiones/CatastroMineroNacional/MapServer",
+              "type": "esri-mapServer-group"
+            },
+            {
+              "name": "Catastro Minero- Tipo Conseción",
+              "description": "[Licence](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "dataCustodian": "[Agencia de Regulación y Control Minero](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "url": "http://181.211.37.231:1028/arcgis/rest/services/Gads/Concesiones_Produccion/MapServer",
+              "type": "esri-mapServer-group"
+            },
+            {
+              "name": "Catastro Minero- Producción",
+              "description": "[Licence](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "dataCustodian": "[Agencia de Regulación y Control Minero](http://geo.controlminero.gob.ec:1026/geo_visor/)",
+              "url": "http://181.211.37.231:1028/arcgis/rest/services/Gads/Concesiones_Produccion/FeatureServer",
+              "type": "esri-featureServer"
+            }
+          ]
+        },
+        {
+          "url": "https://srvportal.gestionderiesgos.gob.ec/server/rest/services",
+          "type": "esri-group",
+          "dataCustodian": "[SNGR](https://.gestionderiesgos.gob.ec)",
+          "name": "Sistema Nacional de Gestión de Riesgos"
         }
       ]
     },
+
     {
       "type": "group",
-      "name": "Servicios externos",
+      "name": "Servicios Globales",
+      "sortMembersBy": "name",
       "members": [
         {
           "type": "group",
@@ -293,9 +375,7 @@
               "dataCustodian": "[ArcGis Services](https://server.arcgisonline.com/arcgis/rest/services)",
               "name": "Mapa de topografía del mundo"
             }
-          ],
-          "isOpen": true,
-          "shareKeys": ["Root Group/WMS"]
+          ]
         },
         {
           "name": "Energy Data",
@@ -306,6 +386,21 @@
           "type": "wfs-group",
           "name": "IRENA",
           "url": "https://irena-ga.azurewebsites.net/geoserver/ows/"
+        },
+
+        {
+          "name": "NASA Global Imagery Browse Services for EOSDIS",
+          "description": "[Licence](NASA)",
+          "dataCustodian": "[NASA Global Imagery](https://earthdata.nasa.gov)",
+          "url": "https://gibs-b.earthdata.nasa.gov/wms/epsg4326/best/wms.cgi",
+          "type": "wms-group"
+        },
+        {
+          "name": "EOX IT Services",
+          "description": "EOX",
+          "dataCustodian": "https://eox.at",
+          "url": "https://tiles.maps.eox.at/wms?",
+          "type": "wms-group"
         }
       ]
     }

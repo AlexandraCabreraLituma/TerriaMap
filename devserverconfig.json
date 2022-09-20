@@ -40,6 +40,9 @@
     "earthobs3.arcgis.com",
     "test.globalsolaratlas.info:8080",
     "test.globalsolaratlas.info",
-    "energydata.info:8080"
+    "energydata.info:8080",
+    "codigopostal.gob.ec:443",
+    "186.42.174.236:8080",
+    "geoportal.inclusion.gob.ec:443"
   ]
 }
