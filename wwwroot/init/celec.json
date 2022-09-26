@@ -16,21 +16,21 @@
           "path": ["g1"],
           "type": "terria-reference",
           "isGroup": true,
-          "url": "http://localhost:3001/init/celec_hidrometeorologia.json",
+          "url": "http://172.16.60.46:3002/init/celec_hidrometeorologia.json",
           "name": "G1 Hidrometeorología"
         },
         {
           "path": ["g2"],
           "type": "terria-reference",
           "isGroup": true,
-          "url": "http://localhost:3001/init/celec_geo.json",
+          "url": "http://172.16.60.46:3002/init/celec_geo.json",
           "name": "G2 Geología"
         },
         {
           "path": ["g4"],
           "type": "terria-reference",
           "isGroup": true,
-          "url": "http://localhost:3001/init/celec_energia.json",
+          "url": "http://172.16.60.46:3002/init/celec_energia.json",
           "name": "G4 Energías Renovables"
         },
         {

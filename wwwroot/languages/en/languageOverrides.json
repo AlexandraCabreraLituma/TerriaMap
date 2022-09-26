@@ -10,6 +10,12 @@
     "cancel": "Cancel",
     "confirm": "Confirm"
   },
+  "browsers": {
+    "chrome": "Google Chrome",
+    "firefox": "Mozilla Firefox",
+    "edge": "Microsoft Edge",
+    "safari": "Apple Safari"
+  },
   "trainer": {
     "expandTrainer": "Show more step detail",
     "collapseTrainer": "Hide step detail",
@@ -218,7 +224,10 @@
     "convertNotificationFeedback": "For questions or feedback, click here.",
     "convertNotificationWarningsTitle": "Technical details",
     "convertErrorTitle": "Could not upgrade share link to V8",
-    "convertErrorMessage": "This share link is based on an older version of TerriaJS - the software powering this web map. An error has occurred trying to upgrade the share data."
+    "convertErrorMessage": "This share link is based on an older version of TerriaJS - the software powering this web map. An error has occurred trying to upgrade the share data.",
+    "downloadMap": "Download map (png)",
+    "embedDescription": "To embed, copy this code to embed this map into an HTML page:",
+    "getShareSaveHelpMessage": "How to Bookmark Sharelinks"
   },
   "countDatasets": {
     "btnText": "Start",
@@ -402,7 +411,9 @@
     "storyEditor": "Story Editor",
     "hideStoryPanel": "hide story builder",
     "loadSceneErrorTitle": "Error loading Story Scene",
-    "loadSceneErrorMessage": "An error occurred while loading data for story scene: `{{title}}`."
+    "loadSceneErrorMessage": "An error occurred while loading data for story scene: `{{title}}`.",
+    "next": "Next",
+    "prev": "Prev"
   },
   "satelliteGuidance": {
     "menuTitle": "You can access map guides at any time by looking in the <2>help menu</2>.",
@@ -546,9 +557,11 @@
       "undefinedLabel": "Not specified"
     },
     "searchItem": "Search",
-    "searchItemTitle": "Search"
+    "searchItemTitle": "Search",
+    "splitScreenMode": "SPLIT SCREEN MODE"
   },
   "dateTime": {
+    "selectorLabel": "Time:",
     "back": "Go back",
     "previous": "Previous time",
     "selectTime": "Select a time",
@@ -597,6 +610,9 @@
     "shareURL": "Share URL",
     "shareExplanation": "Anyone with this URL will be able to access this map.",
     "copy": "Copy"
+  },
+  "includeStory": {
+    "message": "Include Story in Share"
   },
   "dragDrop": {
     "text": "<0>Drag & Drop</0><1>Your data anywhere to view on the map<1>",
@@ -1695,5 +1711,42 @@
   "helpContentTerm8": {
     "term": "preview style",
     "content": "The way the dataset appears in the preview window. We recommend true colour to search for cloud-free images"
+  },
+  "compare": {
+    "title": "Compare",
+    "done": "Done",
+    "leftPanel": "Left panel",
+    "rightPanel": "Right panel",
+    "entireMap": {
+      "title": "Entire map",
+      "emptyText": "Add new data to show across the entire map via the dotted menu above."
+    },
+    "entireMapMenu": {
+      "browse": "Browse map data",
+      "sendAllToFront": "Send all to front",
+      "sendAllToBack": "Send all to back",
+      "hideAll": "Hide all"
+    },
+    "info": "Compare spatial datasets from your workbench side-by-side on the map.",
+    "dataset": {
+      "label": "Dataset",
+      "selectOne": "Select one"
+    },
+    "dimensionSelector": {
+      "undefinedLabel": "Not specified"
+    },
+    "dateButton": {
+      "left": "Left",
+      "right": "Right",
+      "select": "Select a date"
+    },
+    "dateLocationFilter": {
+      "filter": "Filter date by location",
+      "loading": "Loading filter...",
+      "cancel": "Cancel",
+      "location": "Now showing available imagery for {{latitude}}, {{longitude}}",
+      "mouseTooltipTitle": "Select location",
+      "mouseTooltipMessage": "Right click to cancel"
+    }
   }
 }

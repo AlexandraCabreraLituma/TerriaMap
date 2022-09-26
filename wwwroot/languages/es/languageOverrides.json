@@ -10,6 +10,12 @@
     "back": "Atrás",
     "confirm": "Confirmar"
   },
+  "browsers": {
+    "chrome": "Google Chrome",
+    "firefox": "Mozilla Firefox",
+    "edge": "Microsoft Edge",
+    "safari": "Apple Safari"
+  },
   "trainer": {
     "expandTrainer": "Mostrar paso",
     "collapseTrainer": "Ocultar paso",
@@ -219,7 +225,9 @@
     "convertNotificationWarningsTitle": "Detalles técnicos",
     "convertErrorTitle": "No se pudo actualizar el enlace para compartir a V8",
     "convertErrorMessage": "Este enlace para compartir se basa en una versión anterior de TerriaJS, el software que impulsa este mapa web. Se ha producido un error al intentar actualizar los datos compartidos.",
-    "downloadMap": "Descargar mapa"
+    "downloadMap": "Descargar map (png)",
+    "embedDescription": "Para incrustar, copie este código para incrustar este mapa en una página HTML:",
+    "getShareSaveHelpMessage": "Cómo marcar enlaces compartidos"
   },
   "countDatasets": {
     "loadError": "No se pudo cargar.",
@@ -403,7 +411,9 @@
     "mobileViewStory": "Ver historias {{storiesLength}}",
     "hideStoryPanel": "Ocultar constructor de historias",
     "loadSceneErrorTitle": "Error al cargar la escena de la historia",
-    "loadSceneErrorMessage": "Se produjo un error al cargar los datos de la escena de la historia: `{{title}}`."
+    "loadSceneErrorMessage": "Se produjo un error al cargar los datos de la escena de la historia: `{{title}}`.",
+    "next": "Siguiente",
+    "prev": "Anterior"
   },
   "satelliteGuidance": {
     "prevI": "No gracias",
@@ -547,9 +557,12 @@
       "undefinedLabel": "No especificado"
     },
     "searchItem": "Buscar",
-    "searchItemTitle": "Buscar"
+    "searchItemTitle": "Buscar",
+    "splitScreenMode": "SPLIT SCREEN MODE"
   },
   "dateTime": {
+    "selectorLabel": "Tiempo:",
+    "selectorLabel": "Tiempo:",
     "back": "Regresar",
     "previous": "Momento Anterior",
     "selectTime": "Seleccione una hora",
@@ -598,6 +611,9 @@
     "success": "Copiado al portapapeles",
     "unsuccessful": "Copia fallida...",
     "shareExplanation": "Cualquiera con esta URL podrá acceder a este mapa."
+  },
+  "includeStory": {
+    "message": "Incluir historia en Compartir"
   },
   "dragDrop": {
     "text": "<0>Drag & Drop</0><1>Tus datos en cualquier lugar para verlos en el mapa<1>",
@@ -1702,5 +1718,42 @@
   "helpContentTerm8": {
     "term": "estilo de vista previa",
     "content": "En esta forma aparece el conjunto de datos en la ventana de vista previa. Recomendamos color verdadero para buscar imágenes libres de nubes"
+  },
+  "compare": {
+    "title": "Comprar",
+    "done": "Listo",
+    "leftPanel": "Panel izquierdo",
+    "rightPanel": "Panel derecho",
+    "entireMap": {
+      "title": "Todo el mapa",
+      "emptyText": "Agregue nuevos datos para mostrar en todo el mapa a través del menú punteado arriba."
+    },
+    "entireMapMenu": {
+      "browse": "Examinar datos de mapas",
+      "sendAllToFront": "Enviar todo al frente",
+      "sendAllToBack": "Enviar todo al fondo",
+      "hideAll": "Ocultar todo"
+    },
+    "info": "Compare conjuntos de datos espaciales de su banco de trabajo uno al lado del otro en el mapa.",
+    "dataset": {
+      "label": "Dataset",
+      "selectOne": "Selecionar un"
+    },
+    "dimensionSelector": {
+      "undefinedLabel": "No especificado"
+    },
+    "dateButton": {
+      "left": "Izquierda",
+      "right": "Derecha",
+      "select": "Selecionar fecha"
+    },
+    "dateLocationFilter": {
+      "filter": "Filtrar fecha por ubicación",
+      "loading": "Cargando filtro...",
+      "cancel": "Cancelar",
+      "location": "Ahora mostrando las imágenes disponibles para {{latitude}}, {{longitude}}",
+      "mouseTooltipTitle": "Seleccionar ubicación",
+      "mouseTooltipMessage": "Clic derecho para cancelar"
+    }
   }
 }
