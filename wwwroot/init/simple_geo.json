@@ -43,7 +43,7 @@
         },
         {
           "type": "group",
-          "name": "Control de desplazamiento",
+          "name": "Control de desplazamiento - hitos topográficos",
           "members": [
             {
               "name": "Desplazamiento (mm)",
@@ -160,7 +160,7 @@
           ]
         },
         {
-          "name": "Piezómetro  Casa Grande (mm)",
+          "name": "Piezómetro  Casa Grande (msnm)",
           "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/Al7RzLr7k/g2_piezometro_casa_grande?orgId=1",
           "type": "csv",
           "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_casa_grande&maxFeatures=5000000&outputFormat=text%2Fcsv",
@@ -188,7 +188,7 @@
           ]
         },
         {
-          "name": "Piezómetro  Cuerda vibrante (mm)",
+          "name": "Piezómetro  Cuerda vibrante (msnm)",
           "description": "Resumen de los valores de a escala anual y mensual  en las estaciones .\n\n Enlace  $GRAFANA_URL/d/qvjjZsr7k/g2_piezometro_cuerda_vibrante?orgId=1",
           "type": "csv",
           "url": "$GEOSERVER_URL/g2_geologia/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=g2_geologia%3Ag2_geologia_piezometro_cuerda_vibrante&maxFeatures=5000000&outputFormat=text%2Fcsv",
